@@ -58,7 +58,7 @@
     "children": ["list-context.product-list#demo1"]
   },
   "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
+    "blocks": ["product-summary.shelf#demo"],
     "children": ["slider-layout#demo-products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
@@ -76,7 +76,28 @@
       "blockClass": "shelf"
     }
   },
-
+  "product-summary.shelf#demo":{
+    "children": [
+      "product-summary-name",
+      "product-summary-image",
+      "challenge-permission#price"
+    ]
+  },
+  "challenge-permission#price":{
+    "blocks":[
+      "allowed-content#price",
+      "disallowed-content#price"
+    ] 
+  },
+  "allowed-content#price":{
+    "children": [
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+  "disallowed-content#price":{
+    "children": []
+  },
   "info-card#home": {
     "props": {
       "id": "info-card-home",

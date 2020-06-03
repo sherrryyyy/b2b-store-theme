@@ -4,9 +4,9 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-apparel",
       "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#category-mobile",
+      "menu-item#category-tools"
     ]
   },
   "menu-item#category-apparel": {
@@ -90,6 +90,21 @@
       }
     }
   },
+  "menu-item#category-mobile": {
+    "props": {
+      "id": "menu-item-category-mobile",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/mobile/",
+        "noFollow": false,
+        "tagTitle": "Mobile",
+        "text": "Mobile"
+      }
+    }
+  },
   "menu-item#category-home": {
     "props": {
       "id": "menu-item-category-home",
@@ -98,10 +113,25 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/home---decor/",
+        "href": "/Computers/",
         "noFollow": false,
-        "tagTitle": "Home & Decor",
-        "text": "Home & Decor"
+        "tagTitle": "Computers",
+        "text": "Computers"
+      }
+    }
+  },
+  "menu-item#category-tools": {
+    "props": {
+      "id": "menu-item-category-tools",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/tools/",
+        "noFollow": false,
+        "tagTitle": "Tools",
+        "text": "Tools"
       }
     }
   },
