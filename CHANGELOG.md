@@ -7,14 +7,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## [3.37.0] - 2020-05-18
-### Changed
-- PreventRouteChange to `false`.
-
-## [3.36.0] - 2020-05-11
-### Added
-- Add input values for recursive assemblies
-
 ## [3.35.0] - 2020-04-13
 ### Added
 - `aspectRatio` and `maxHeight` on `product-summary-image#shelf`.

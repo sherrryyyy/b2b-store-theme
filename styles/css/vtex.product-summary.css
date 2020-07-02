@@ -14,7 +14,7 @@
 @media screen and (max-width: 40em) {
   .container :global(.vtex-modal-layout-0-x-triggerContainer) {
     display: none;
-  } 
+  }
 }
 
 .nameContainer {
@@ -39,4 +39,9 @@
 
 .image {
   border-radius: 0.25rem;
+}
+
+.element {
+  justify-content: space-between;
+  align-items: center;
 }
