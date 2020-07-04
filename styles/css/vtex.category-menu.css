@@ -1,0 +1,45 @@
+.container {
+  background-color: transparent;
+}
+.departmentList {
+  height: 42px;
+}
+.departmentLink {
+  color: #2E2E2E;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transition: color 0.2s ease-in-out;
+  background-color: ;
+}
+.itemContainer--department:hover .departmentLink {
+  border-color: #03009c !important;
+}
+.itemContainer--department:hover .departmentLink {
+  color: #03009c;
+}
+.submenuList {
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+}
+/* Container submenu */
+.itemContainer--category {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  /*background-color: #fff;*/
+  top: 75 !important;
+}
+.submenuItem {
+  width: 25%;
+}
+
+@media screen and (max-width: 1025px) {
+  .sidebarHeader {
+    padding: 0.5rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border-bottom: 1px solid #F1F1F1;
+  }
+}

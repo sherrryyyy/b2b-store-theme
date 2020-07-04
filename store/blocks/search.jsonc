@@ -1,6 +1,9 @@
 {
   "store.search": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout",
+      "newsletter"
+    ],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -8,9 +11,26 @@
       }
     }
   },
+  
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": false
+    }
+  },
+
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "maxSuggestedProducts": 2
+    }
+  },
 
   "store.search#brand": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout",
+      "newsletter"
+    ],
     "props": {
       "context": {
         "orderByField": "OrderByReleaseDateDESC",
@@ -23,7 +43,10 @@
   },
 
   "store.search#department": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout",
+      "newsletter"
+    ],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -33,7 +56,10 @@
   },
 
   "store.search#category": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout",
+      "newsletter"
+    ],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -43,7 +69,10 @@
   },
 
   "store.search#subcategory": {
-    "blocks": ["search-result-layout"],
+    "blocks": [
+      "search-result-layout",
+      "newsletter"
+    ],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -59,32 +88,25 @@
       "search-not-found-layout"
     ]
   },
+
+  "flex-layout.row#did-you-mean": {
+    "children": ["did-you-mean"]
+  },
+
   "search-result-layout.desktop": {
     "children": [
-      "flex-layout.row#didyoumean",
-      "flex-layout.row#suggestion",
+      "flex-layout.row#did-you-mean",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#searchtitle",
       "flex-layout.row#result"
     ],
     "props": {
       "pagination": "show-more",
-      "preventRouteChange": true,
+      "preventRouteChange": false,
       "mobileLayout": {
         "mode1": "small",
         "mode2": "normal"
       }
-    }
-  },
-  "flex-layout.row#didyoumean": {
-    "children": ["did-you-mean"]
-  },
-  "flex-layout.row#suggestion": {
-    "children": ["search-banner#one"]
-  },
-  "search-banner#one": {
-    "props": {
-      "area": "one",
-      "blockClass": "myBanner",
-      "horizontalAlignment": "center"
     }
   },
   "flex-layout.row#searchbread": {
@@ -237,6 +259,6 @@
   },
 
   "gallery": {
-    "blocks": ["product-summary.shelf#demo"]
+    "blocks": ["product-summary.shelf"]
   }
 }

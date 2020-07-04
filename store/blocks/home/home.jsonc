@@ -2,15 +2,10 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#deals",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
       "newsletter"
     ]
   },
@@ -50,7 +45,7 @@
 
   "rich-text#shelf-title": {
     "props": {
-      "text": "## Summer",
+      "text": "## Novidades",
       "blockClass": "shelfTitle"
     }
   },
@@ -58,7 +53,7 @@
     "children": ["list-context.product-list#demo1"]
   },
   "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf#demo"],
+    "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
@@ -75,28 +70,6 @@
       "fullWidth": false,
       "blockClass": "shelf"
     }
-  },
-  "product-summary.shelf#demo":{
-    "children": [
-      "product-summary-name",
-      "product-summary-image",
-      "challenge-permission#price"
-    ]
-  },
-  "challenge-permission#price":{
-    "blocks":[
-      "allowed-content#price",
-      "disallowed-content#price"
-    ] 
-  },
-  "allowed-content#price":{
-    "children": [
-      "product-summary-price",
-      "product-summary-buy-button"
-    ]
-  },
-  "disallowed-content#price":{
-    "children": []
   },
   "info-card#home": {
     "props": {

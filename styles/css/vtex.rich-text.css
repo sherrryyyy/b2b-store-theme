@@ -1,3 +1,44 @@
+/**
+* Produto
+**/
+.container--direcionamento-usuario-texto .paragraph {
+  margin-bottom: 1rem;
+}
+
+.wrapper--direcionamento-usuario-ctas {
+  min-width: 100%;
+}
+
+.container--direcionamento-usuario-ctas .link {
+  background-color: #0c389f;
+  text-transform: uppercase;
+  border-radius: .25rem;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 1rem;
+  color: white;
+  width: 100%;
+}
+
+.container--direcionamento-usuario-ctas .link:hover {
+  background-color: #2050b1;
+}
+
+.paragraph--direcionamento-usuario-ctas .link:last-child {
+  background-color: #f2f4f5;
+  text-transform: none;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  color: #979899;
+}
+
+.paragraph--direcionamento-usuario-ctas .link:last-child:hover {
+  background-color: #f2f4f5;
+}
+
+
 .container--deals {
   color: #ffffff;
   text-align: center;

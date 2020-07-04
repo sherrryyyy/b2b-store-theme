@@ -21,8 +21,33 @@
   color: #fff;
 }
 
+.flexRow--main-header {
+  background-color: #ffffff;
+}
+.flexRowContent--main-header {
+  padding: 0;
+}
+
 .flexRowContent--main-header {
   background-color: #f0f0f0;
+}
+
+/**
+* Header
+**/
+.flexRow--main-header {
+  background-color: #ffffff;
+}
+.flexRowContent--main-header {
+  padding: 0;
+}
+
+/**
+* Main menu
+**/
+.flexRow--main-menu {
+  background-color: #f0f0f0;
+  padding: 0;
 }
 
 .flexRowContent--main-header-mobile {
@@ -95,4 +120,15 @@
 
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
+}
+
+
+.flexRow--menu-row-footer,
+.flexRow--copyright {
+  background-color: #F1F1F1;
+}
+
+.flexRow--credits,
+.flexRow--logo-vtex {
+  background-color: #fff;
 }
