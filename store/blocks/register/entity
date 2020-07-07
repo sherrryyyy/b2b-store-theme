@@ -77,23 +77,50 @@
 		"publicWrite": ["publicForWrite"],
 		"publicJsonSchema": true
 	},
-	"v-triggers": [{
-		"name": "insert-customer-table",
-		"active": true,
-		"condition": "",
-		"action": {
-			"type": "save",
-			"dataEntity": "CL",
-			"json": {
-				"approved": "false",
-				"email": "{!nfEmail}",
-				"documentType": "CNPJ",
-				"isCorporate": "true",
-				"corporateName": "{!razaoSocial}",
-				"tradeName": "{!nomeFantasia}",
-				"stateRegistration": "true",
-				"corporateDocument": "{!cnpj}"
-			}
-		}
-	}]
+  "v-triggers": [
+    {
+      "name": "insert-customer-table",
+      "active": true,
+      "condition": "",
+      "action": {
+        "type": "save",
+        "dataEntity": "CL",
+        "json": {
+          "id": "{!id}",
+          "approved": "false",
+          "email": "{!nfEmail}",
+          "documentType": "CNPJ",
+          "isCorporate": "true",
+          "corporateName": "{!razaoSocial}",
+          "tradeName": "{!nomeFantasia}",
+          "stateRegistration": "true",
+          "corporateDocument": "{!cnpj}"
+        }
+      }
+    },
+    {
+      "name": "insert-address-table",
+      "active": true,
+      "condition": "",
+      "action": {
+        "type": "save",
+        "dataEntity": "AD",
+        "json": {
+          "userId": "{!id}",
+          "addressName": "Principal",
+          "addressType": "commercial",
+          "country": "BRA",
+          "state": "SP",
+          "city": "Sao Paulo",
+          "neighborhood": "Carrão",
+          "postalCode": "{!cep}",
+          "street": "{!streetAddress}",
+          "number": "118",
+          "complement": "apto 181",
+          "reference": "",
+          "receiverName": ""
+        }
+      }
+    }
+  ]
 }
