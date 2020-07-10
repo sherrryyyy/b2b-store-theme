@@ -1,99 +1,202 @@
 {
-	"title": "Revenda",
-	"type": "object",
-	"properties": {
-		"razaoSocial": {
-			"type": "string",
-			"title": "Razão Social"
-		},
-		"cnpj": {
-			"type": "string",
-			"title": "CNPJ"
-		},
-		"nomeFantasia": {
-			"type": "string",
-			"title": "Nome Fantasia"
-		},
-		"contribuinte": {
-			"type": "boolean",
-			"title": "Contribuinte de ICMS?"
-		},
-		"isento": {
-			"type": "boolean",
-			"title": "Isento de Inscrição Estadual?"
-		},
-		"inscricaoEstadual": {
-			"type": "integer",
-			"title": "Inscrição Estadual"
-		},
-		"nfEmail": {
-			"type": "string",
-			"format": "email",
-			"title": "E-Mail para Nota Fiscal"
-		},
-		"address": {
-			"title": "Address",
-			"type": "object",
-			"properties": {
-				"streetType": {
-					"type": "string",
-					"title": "Stree type: ",
-					"enum": [
-						"Stresst",
-						"Highway",
-						"Avenue",
-						"Boulevard"
-					]
-				},
-				"cep": {
-					"title": "ZipCode",
-					"type": "integer",
-					"minimum": 0,
-					"maximum": 8
-				},
-				"streetAddress": {
-					"type": "string",
-					"title": "Address"
-				},
-				"streetNumber": {
-					"type": "integer",
-					"title": "No"
-				}
-			},
-			"required": [
-				"streetType", "streetAddress", "streetNumber"
-			]
-		},
-		"agreement": {
-			"type": "boolean",
-			"title": "A empresa se enquadra no regime do simples nacional?"
-		}
-	},
-	"required": [
-		"razaoSocial",
-		"nfEmail"
-	],
-	"v-security": {
-		"publicWrite": ["publicForWrite"],
-		"publicJsonSchema": true
-	},
-	"v-triggers": [{
-		"name": "insert-customer-table",
-		"active": true,
-		"condition": "",
-		"action": {
-			"type": "save",
-			"dataEntity": "CL",
-			"json": {
-				"approved": "false",
-				"email": "{!nfEmail}",
-				"documentType": "CNPJ",
-				"isCorporate": "true",
-				"corporateName": "{!razaoSocial}",
-				"tradeName": "{!nomeFantasia}",
-				"stateRegistration": "true",
-				"corporateDocument": "{!cnpj}"
-			}
-		}
-	}]
+  "title": "Revenda",
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email"
+    },
+    "stateRegistration": {
+      "type": "string",
+      "maxLength": 750,
+      "title": "Inscrição Estadual"
+    },
+    "homePhone": {
+      "type": "string",
+      "title": "Celular",
+      "pattern": "^(?:\\+)[0-9]{2}\\s?[0-9]{2}\\s?[0-9]{4,5}[0-9]{4}$"
+    },
+    "corporateDocument": {
+      "type": "string",
+      "maxLength": 14,
+      "title": "CNPJ (Formato: 99999999999999 - 14 dígitos)",
+      "pattern": "^(\\d{14})$"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Telefone",
+      "pattern": "^(?:\\+)[0-9]{2}\\s?[0-9]{2}\\s?[0-9]{4,5}[0-9]{4}$"
+    },
+    "lastName": {
+      "type": "string",
+      "maxLength": 750,
+      "title": "Sobrenome"
+    },
+    "tradeName": {
+      "type": "string",
+      "maxLength": 750,
+      "title": "Nome Fantasia"
+    },
+    "corporateName": {
+      "type": "string",
+      "maxLength": 750,
+      "title": "Razão Social"
+    },
+    "firstName": {
+      "type": "string",
+      "maxLength": 750,
+      "title": "Nome"
+    },
+    "streetType": {
+      "type": "string",
+      "title": "Tipo de rua",
+      "enum": [
+        "Rua",
+        "Avenida",
+        "Boulevard",
+        "Rodovia",
+        "Travessa"
+      ]
+    },
+    "city": {
+      "type": "string",
+      "maxLength": 750,
+      "title": "Cidade"
+    },
+    "reference": {
+      "type": "string",
+      "maxLength": 750,
+      "title": "Referência"
+    },
+    "street": {
+      "type": "string",
+      "title": "Rua"
+    },
+    "state": {
+      "type": "string",
+      "maxLength": 2,
+      "title": "Estado",
+      "enum": [
+        "AC",
+        "AL",
+        "AP",
+        "AM",
+        "BA",
+        "CE",
+        "DF",
+        "ES",
+        "GO",
+        "MA",
+        "MT",
+        "MS",
+        "MG",
+        "PA",
+        "PB",
+        "PR",
+        "PE",
+        "PI",
+        "RJ",
+        "RN",
+        "RS",
+        "RO",
+        "RR",
+        "SC",
+        "SP",
+        "SE",
+        "TO"
+      ]
+    },
+    "complement": {
+      "type": "string",
+      "maxLength": 750,
+      "title": "Complemento"
+    },
+    "neighborhood": {
+      "type": "string",
+      "maxLength": 750,
+      "title": "Bairro"
+    },
+    "number": {
+      "type": "string",
+      "maxLength": 750,
+      "title": "Número"
+    },
+    "postalCode": {
+      "type": "string",
+      "maxLength": 9,
+      "title": "CEP (formato 99999-999)",
+      "pattern": "[0-9]{5}-[\\d]{3}$"
+    }
+  },
+  "required": [
+    "email",
+    "stateRegistration",
+    "homePhone",
+    "corporateDocument",
+    "phone",
+    "lastName",
+    "tradeName",
+    "corporateName",
+    "firstName",
+    "city",
+    "street",
+    "state",
+    "streetType",
+    "neighborhood",
+    "number",
+    "postalCode"
+  ],
+  "v-security": {
+    "publicWrite": [ "publicForWrite" ],
+    "publicJsonSchema": true
+  },
+  "v-triggers": [
+    {
+      "name": "insert-customer-table",
+      "active": true,
+      "condition": "",
+      "action": {
+        "type": "save",
+        "dataEntity": "CL",
+        "json": {
+          "id": "{!id}",
+          "approved": "false",
+          "firstName": "{!firstName}",
+          "lastName": "{!lastName}",
+          "email": "{!email}",
+          "homePhone": "{!homePhone}",
+          "isCorporate": "true",
+          "corporateName": "{!corporateName}",
+          "tradeName": "{!tradeName}",
+          "stateRegistration": "{!stateRegistration}",
+          "corporateDocument": "{!corporateDocument}",
+          "isOrgAdmin": "true"
+        }
+      }
+    },
+    {
+      "name": "insert-address-table",
+      "active": true,
+      "condition": "",
+      "action": {
+        "type": "save",
+        "dataEntity": "AD",
+        "json": {
+          "userId": "{!id}",
+          "city": "{!city}",
+          "reference": "{!reference}",
+          "street": "{!street}",
+          "state": "{!state}",
+          "streetType": "{!streetType}",
+          "neighborhood": "{!neighborhood}",
+          "addressName": "Principal",
+          "number": "{!number}",
+          "country": "BRA",
+          "postalCode": "{!postalCode}",
+          "complement": "{!complement}"
+        }
+      }
+    }
+  ]
 }

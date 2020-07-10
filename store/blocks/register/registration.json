@@ -1,0 +1,265 @@
+{
+  "store.custom#registration": {
+    "blocks": [
+      "rich-text#formTitle",
+      "rich-text#formIntro",
+      "flex-layout.row#form"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.row#form": {
+    "children": [
+      "flex-layout.col#form"
+    ]
+  },
+  "flex-layout.col#form": {
+    "children": [
+      "form"
+    ],
+    "props": {
+      "text": "# Seja nosso cliente",
+      "textPosition": "CENTER",
+      "blockClass": "formReseller"
+    }
+  },
+  "rich-text#formTitle": {
+    "props": {
+      "text": "# Seja nosso cliente",
+      "textPosition": "CENTER",
+      "blockClass": "title"
+    }
+  },
+  "rich-text#contact": {
+    "props": {
+      "text": "**Dados para contato**",
+      "blockClass": "formReseller"
+    }
+  },
+  "rich-text#company": {
+    "props": {
+      "text": "**Dados da sua empresa**",
+      "blockClass": "formReseller"
+    }
+  },
+  "rich-text#address": {
+    "props": {
+      "text": "**Endereço da empresa**",
+      "blockClass": "formReseller"
+    }
+  },
+  "rich-text#formIntro": {
+    "props": {
+      "text": "Oferecemos todo o suporte para que nossos clientes prestem melhores serviços e prosperem em seus negócios. Atendemos mais de 20.000 parceiros em todo o Brasil. Os consultores comerciais apoiam seus clientes na busca das melhores soluções para suprir todos os tipos de demandas.",
+      "blockClass": "signup-text"
+    }
+  },
+  "form": {
+    "props": {
+      "entity": "Revenda",
+      "schema": "v1"
+    },
+    "children": [
+      "rich-text#contact",
+      "flex-layout.row#formContact",
+      "rich-text#company",
+      "flex-layout.row#formCompany",
+      "rich-text#address",
+      "flex-layout.row#formAddress",
+      "form-submit"
+    ],
+    "blocks": [ "form-success" ]
+  },
+  "flex-layout.row#formCompany": {
+    "children": [
+      "flex-layout.col#formCompanycol1",
+      "flex-layout.col#formCompanycol2"
+    ],
+    "props": {
+      "blockClass": "formReseller"
+    }
+  },
+  "flex-layout.col#formCompanycol1": {
+    "children": [
+      "form-input.text#corporateName",
+      "form-input.text#stateRegistration",
+      "form-input.text#email"
+    ],
+    "props": {
+      "blockClass": "formReseller"
+    }
+  },
+  "flex-layout.col#formCompanycol2": {
+    "children": [
+      "form-input.text#corporateDocument",
+      "form-input.text#tradeName",
+      "form-input.text#phone"
+    ],
+    "props": {
+      "blockClass": "formReseller"
+    }
+  },
+  "form-input.text#corporateName": {
+    "props": {
+      "pointer": "#/properties/corporateName",
+      "label": "Razão social: "
+    }
+  },
+  "form-input.text#corporateDocument": {
+    "props": {
+      "pointer": "#/properties/corporateDocument"
+    }
+  },
+  "form-input.text#stateRegistration": {
+    "props": {
+      "pointer": "#/properties/stateRegistration"
+    }
+  },
+  "form-input.text#tradeName": {
+    "props": {
+      "pointer": "#/properties/tradeName"
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email"
+    }
+  },
+  "form-input.text#phone": {
+    "props": {
+      "pointer": "#/properties/phone"
+    }
+  },
+  "flex-layout.row#formContact": {
+    "children": [
+      "flex-layout.col#formContactcol1",
+      "flex-layout.col#formContactcol2"
+    ],
+    "props": {
+      "blockClass": "formReseller"
+    }
+  },
+  "flex-layout.col#formContactcol1": {
+    "children": [
+      "form-input.text#firstName",
+      "form-input.text#homePhone"
+    ],
+    "props": {
+      "blockClass": "formReseller"
+    }
+  },
+  "flex-layout.col#formContactcol2": {
+    "children": [
+      "form-input.text#lastName"
+    ],
+    "props": {
+      "blockClass": "formReseller"
+    }
+  },
+  "form-input.text#firstName": {
+    "props": {
+      "pointer": "#/properties/firstName"
+    }
+  },
+  "form-input.text#homePhone": {
+    "props": {
+      "pointer": "#/properties/homePhone"
+    }
+  },
+  "form-input.text#lastName": {
+    "props": {
+      "pointer": "#/properties/lastName"
+    }
+  },
+  "flex-layout.row#formAddress": {
+    "children": [
+      "flex-layout.col#formAddresscol1",
+      "flex-layout.col#formAddresscol2"
+    ],
+    "props": {
+      "blockClass": "formReseller"
+    }
+  },
+  "flex-layout.col#formAddresscol1": {
+    "children": [
+      "form-input.dropdown#streetType",
+      "form-input.text#number",
+      "form-input.text#neighborhood",
+      "form-input.dropdown#state"
+    ],
+    "props": {
+      "blockClass": "formReseller"
+    }
+  },
+  "flex-layout.col#formAddresscol2": {
+    "children": [
+      "form-input.text#street",
+      "form-input.text#complement",
+      "form-input.text#city",
+      "form-input.text#postalCode"
+    ],
+    "props": {
+      "blockClass": "formReseller"
+    }
+  },
+  "form-input.dropdown#streetType": {
+    "props": {
+      "pointer": "#/properties/streetType"
+    }
+  },
+  "form-input.text#street": {
+    "props": {
+      "pointer": "#/properties/street"
+    }
+  },
+  "form-input.text#number": {
+    "props": {
+      "pointer": "#/properties/number"
+    }
+  },
+  "form-input.text#complement": {
+    "props": {
+      "pointer": "#/properties/complement"
+    }
+  },
+  "form-input.text#neighborhood": {
+    "props": {
+      "pointer": "#/properties/neighborhood"
+    }
+  },
+  "form-input.text#city": {
+    "props": {
+      "pointer": "#/properties/city"
+    }
+  },
+  "form-input.dropdown#state": {
+    "props": {
+      "pointer": "#/properties/state"
+    }
+  },
+  "form-input.text#postalCode": {
+    "props": {
+      "pointer": "#/properties/postalCode"
+    }
+  },
+  "form-success": {
+    "children": [
+      "rich-text#successSubmit"
+    ]
+  },
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "Dados enviados com sucesso. Em até 48 horas realizarmos a avaliação do seu cadastro. Enviaremos uma resposta para o e-mail fornecido acima.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "form-submit": {
+    "props": {
+      "label": "Enviar Cadastro",
+      "textAlignment": "Right",
+      "textPosition": "Right"
+    }
+  }
+}

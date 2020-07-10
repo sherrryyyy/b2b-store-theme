@@ -32,6 +32,15 @@
   background-color: #f0f0f0;
 }
 
+.flexCol--formReseller {
+}
+
+.flexColChild--formReseller {
+  padding: 0.5rem;
+  padding-top: 0;
+}
+
+
 /**
 * Header
 **/
@@ -131,4 +140,8 @@
 .flexRow--credits,
 .flexRow--logo-vtex {
   background-color: #fff;
+}
+
+.flex {
+  display: flex;
 }

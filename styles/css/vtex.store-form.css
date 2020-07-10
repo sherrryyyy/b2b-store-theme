@@ -1,0 +1,15 @@
+.formSubmitContainer {
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: inline-flex;
+  width: 100%;
+}
+
+.form {
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: inline-flex;
+  width: 80%;
+}
