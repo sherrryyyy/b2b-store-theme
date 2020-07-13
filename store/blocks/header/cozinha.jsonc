@@ -1,0 +1,253 @@
+{
+  "menu-item#cozinha": {
+    "props": {
+      "id": "menu-item-cozinha",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Cozinha",
+        "text": "Cozinha"
+      }
+    },
+    "blocks": [
+      "submenu#cozinha"
+    ]
+  },
+  "submenu#cozinha": {
+    "props": {
+      "width": "100%",
+      "blockClass": "cozinha"
+    },
+    "children": [
+      "menu#cozinha"
+    ]
+  },
+  "menu#cozinha": {
+    "props": {
+      "blockClass": "cozinha",
+      "items": [
+        {
+          "id": "menu-item-cozinha-geladeira",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "Geladeira",
+            "text": "Geladeira"
+          },
+          "iconProps": {
+            "id": "mpa-single-item",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "black",
+            "mutedClassName": "c-action-primary"
+          }
+
+        },
+        {
+          "id": "menu-item-cozinha-freezer",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Freezer",
+            "text": "Freezer"
+          },
+          "iconProps": {
+            "id": "mpa-single-item",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "black",
+            "mutedClassName": "c-action-primary"
+          }
+        },
+        {
+          "id": "menu-item-cozinha-frigobar",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Frigobar",
+            "text": "Frigobar"
+          },
+          "iconProps": {
+            "id": "mpa-single-item",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "black",
+            "mutedClassName": "c-action-primary"
+          }
+
+        },
+        {
+          "id": "menu-item-cozinha-adega",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Adega",
+            "text": "Adega"
+          },
+          "iconProps": {
+            "id": "mpa-single-item",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "black",
+            "mutedClassName": "c-action-primary"
+          }
+
+        },
+        {
+          "id": "menu-item-cozinha-fogao",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Fogão",
+            "text": "Fogão"
+          },
+          "iconProps": {
+            "id": "mpa-single-item",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "black",
+            "mutedClassName": "c-action-primary"
+          }
+
+        },
+        {
+          "id": "menu-item-cozinha-cooktop",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Cooktop",
+            "text": "Cooktop"
+          },
+          "iconProps": {
+            "id": "mpa-single-item",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "black",
+            "mutedClassName": "c-action-primary"
+          }
+
+        },
+        {
+          "id": "menu-item-cozinha-forno",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Forno",
+            "text": "Forno"
+          },
+          "iconProps": {
+            "id": "mpa-single-item",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "black",
+            "mutedClassName": "c-action-primary"
+          }
+
+        },
+        {
+          "id": "menu-item-cozinha-lava-louca",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Lava-louça",
+            "text": "Lava-louça"
+          },
+          "iconProps": {
+            "id": "mpa-single-item",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "black",
+            "mutedClassName": "c-action-primary"
+          }
+
+        },
+        {
+          "id": "menu-item-cozinha-micro-ondas",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Micro-ondas",
+            "text": "Micro-ondas"
+          },
+          "iconProps": {
+            "id": "mpa-single-item",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "black",
+            "mutedClassName": "c-action-primary"
+          }
+        },
+        {
+          "id": "menu-item-cozinha-coifa-e-depurador",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Coifa e depurador",
+            "text": "Coifa e depurador"
+          },
+          "iconProps": {
+            "id": "mpa-single-item",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "black",
+            "mutedClassName": "c-action-primary"
+          }
+
+        },
+        {
+          "id": "menu-item-cozinha-produtos-de-embutir",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Produtos de embutir",
+            "text": "Produtos de embutir"
+          },
+          "iconProps": {
+            "id": "mpa-single-item",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "black",
+            "mutedClassName": "c-action-primary"
+          }
+        }
+      ]
+    }
+  }
+}

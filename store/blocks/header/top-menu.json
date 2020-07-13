@@ -1,8 +1,8 @@
 {
   "vtex.menu@2.x:menu#websites": {
     "children": [
-      "menu-item#about-us",
-      "challenge-block#loggedIn"
+      "menu-item#shop",
+      "menu-item#about-us"
     ]
   },
   "challenge-block#loggedIn": {
@@ -38,8 +38,8 @@
           "type": "internal",
           "href": "/quickorder",
           "noFollow": false,
-          "tagTitle": "Pedido Rápido",
-          "text": "Pedido Rápido"
+          "tagTitle": "Quick Order",
+          "text": "Quick Order"
         }
       }
     },
@@ -53,8 +53,8 @@
           "type": "internal",
           "href": "/orderquote",
           "noFollow": false,
-          "tagTitle": "Cotação",
-          "text": "Cotação"
+          "tagTitle": "Order Quote",
+          "text": "Order Quote"
         }
       }
     },
@@ -68,24 +68,44 @@
           "type": "internal",
           "href": "/registration",
           "noFollow": false,
-          "tagTitle": "Seja nosso parceiro",
-          "text": "Seja nosso parceiro"
+          "tagTitle": "Become a partner",
+          "text": "Become a partner"
         }
       }
     },
-    "menu-item#about-us": {
+    "menu-item#shop": {
       "props": {
-        "id": "menu-item-about-us",
+        "id": "menu-item-shop",
         "type": "custom",
         "iconId": null,
         "highlight": false,
         "itemProps": {
           "type": "internal",
-          "href": "/about-us",
-          "noFollow": true,
-          "tagTitle": "Sobre Nós",
-          "text": "Sobre Nós"
+          "href": "#",
+          "noFollow": false,
+          "tagTitle": "Shop",
+          "text": "Shop"
         }
       }
+    },
+    "vtex.menu@2.x:menu#institutional": {
+      "children": [
+        "menu-item#vtex-website"
+      ]
+    },
+    "menu-item#vtex-website": {
+      "props": {
+        "id": "menu-item-vtex-website",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "external",
+          "href": "http://vtex.com",
+          "noFollow": false,
+          "tagTitle": "visit vtex.com",
+          "text": "visit vtex.com"
+      }
+    }
   }
 }

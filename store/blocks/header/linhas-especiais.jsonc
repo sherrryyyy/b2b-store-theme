@@ -1,0 +1,85 @@
+{
+  "menu-item#linhas-especiais": {
+    "props": {
+      "id": "menu-item-linhas-especiais",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Linhas Especiais",
+        "text": "Linhas especiais"
+      }
+    },
+    "blocks": [
+      "submenu#linhas-especiais"
+    ]
+  },
+  "submenu#linhas-especiais": {
+    "props": {
+      "width": "100%",
+      "blockClass": "linhas-especiais"
+    },
+    "children": [
+      "flex-layout.row#linhas-especiais"
+    ]
+  },
+  "flex-layout.row#linhas-especiais": {
+    "props": {
+      "blockClass": "linhas-especiais",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "list-context.image-list#linhas-especiais"
+    ]
+  },
+  "list-context.image-list#linhas-especiais": {
+    "children": ["slider-layout#linhas-especiais"],
+    "props": {
+      "height": "110px",
+      "images": [
+        {
+          "image": "https://img.imageboss.me/cdn/http://bimg.visie.com.br/2018/08/logo-vitreous-cor.png",
+          "description": "something something",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "https://img.imageboss.me/cdn/http://bimg.visie.com.br/2018/08/logo-gourmand-cor.png",
+          "description": "something something",
+          "link": {
+            "url": "#"
+          }
+        },
+        {
+          "image": "https://img.imageboss.me/cdn/http://bimg.visie.com.br/2018/08/logo-retro-branco.png",
+          "description": "something something",
+          "link": {
+            "url": "#"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#linhas-especiais": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "fullWidth": true,
+      "navigationStep": "page",
+      "blockClass": "linhas-especiais"
+    }
+  }
+}

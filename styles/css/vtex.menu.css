@@ -1,0 +1,28 @@
+.submenuWrapper--linhas-especiais {
+  padding-bottom: 0;
+}
+
+.menuContainer--cozinha {
+  max-width: 745px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menuItem--cozinha {
+  float: left;
+  max-height: 110px;
+  min-width: 120px;
+  padding: 0 15px;
+  position: relative;
+}
+
+.styledLinkContent--cozinha {
+  flex-flow: wrap;
+  padding: 27px 0 18px;
+  justify-content: center;
+}
+
+.styledLinkIcon--cozinha {
+  flex: 1 100%
+}

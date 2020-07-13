@@ -25,3 +25,36 @@
   padding-left: .5rem;
   padding-right: .5rem;
 }
+
+.slideChildrenContainer--linhas-especiais {
+  padding: 0 15px;
+}
+
+.slide--linhas-especiais {
+  padding: 0 15px;
+}
+
+.imageElement--linhas-especiais {
+  margin: 12px 20px 0;
+}
+
+.imageElementLink--linhas-especiais {
+  padding: 27px 18px;
+  position: relative;
+  height: 100%;
+}
+
+.imageElementLink--linhas-especiais::before {
+  background-color: #f08b1d;
+  content: '';
+  height: 3px;
+  left: 0;
+  position: absolute;
+  bottom: 0;
+  transition: width .6s;
+  width: 0;
+}
+
+.imageElementLink--linhas-especiais:hover::before {
+  width: 100%;
+}
