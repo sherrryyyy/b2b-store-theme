@@ -11,7 +11,8 @@
         "noFollow": false,
         "tagTitle": "Linhas Especiais",
         "text": "Linhas especiais"
-      }
+      },
+      "blockClass": "main-menu"
     },
     "blocks": [
       "submenu#linhas-especiais"

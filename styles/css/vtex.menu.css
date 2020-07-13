@@ -26,3 +26,19 @@
 .styledLinkIcon--cozinha {
   flex: 1 100%
 }
+
+.styledLinkContent--main-menu {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 0 5px;
+  text-align: left;
+}
+
+.menuContainer--misc .styledLinkContent {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 0 5px;
+  text-align: left;
+}
+
+

@@ -1,0 +1,66 @@
+{
+  "vtex.menu@2.x:menu#misc": {
+    "props": {
+      "blockClass": "misc",
+      "items": [
+        {
+          "id": "menu-item-pecas-e-acessorios",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "Peças e acessórios",
+            "text": "Peças e acessórios"
+          },
+          "iconProps": {
+            "id": "mpa-single-item",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "black",
+            "mutedClassName": "c-action-primary"
+          }
+        },
+        {
+          "id": "menu-item-atendimento",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "Atendimento",
+            "text": "Atendimento"
+          },
+          "iconProps": {
+            "id": "mpa-single-item",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "black",
+            "mutedClassName": "c-action-primary"
+          }
+        },
+        {
+          "id": "menu-item-minha-conta",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "Minha conta",
+            "text": "Minha conta"
+          },
+          "iconProps": {
+            "id": "mpa-single-item",
+            "size": 16,
+            "viewBox": "0 0 16 16",
+            "activeClassName": "black",
+            "mutedClassName": "c-action-primary"
+          }
+        }
+      ]    }
+  }
+
+}

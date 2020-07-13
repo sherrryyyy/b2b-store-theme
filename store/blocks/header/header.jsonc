@@ -35,8 +35,7 @@
       "flex-layout.col#spacer",
       "flex-layout.col#category-menu",
       "search-bar",
-      "locale-switcher",
-      "login",
+      "flex-layout.col#misc",
       "minicart.v2"
     ]
   },
@@ -59,9 +58,17 @@
   },
   "flex-layout.col#category-menu": {
     "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "blockClass": "category-menu"
     },
     "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  "flex-layout.col#misc": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "misc"
+    },
+    "children": ["vtex.menu@2.x:menu#misc"]
   },
   "logo#desktop": {
     "props": {

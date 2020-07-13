@@ -23,6 +23,7 @@
 
 .flexRowContent--main-header {
   background-image: linear-gradient(92deg, #f08b1d ,#f55d2f);
+  height: 50px;
 }
 
 .flexRowContent--main-header-mobile {

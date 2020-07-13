@@ -22,7 +22,9 @@
         "noFollow": false,
         "tagTitle": "Lavanderia",
         "text": "Lavanderia"
-      }
+      },
+      "blockClass": "main-menu"
+
     },
     "blocks": [
       "vtex.menu@2.x:submenu#category-apparel"
@@ -40,7 +42,8 @@
         "noFollow": false,
         "tagTitle": "Mais Produtos",
         "text": "Mais produtos"
-      }
+      },
+      "blockClass": "main-menu"
     },
     "blocks": [
       "vtex.menu@2.x:submenu#category-apparel"

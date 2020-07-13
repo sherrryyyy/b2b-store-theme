@@ -11,7 +11,8 @@
         "noFollow": false,
         "tagTitle": "Cozinha",
         "text": "Cozinha"
-      }
+      },
+      "blockClass": "main-menu"
     },
     "blocks": [
       "submenu#cozinha"

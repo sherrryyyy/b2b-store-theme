@@ -6,10 +6,6 @@
   text-decoration: underline;
 }
 
-.searchBarContainer :global(.vtex-styleguide-9-x-input) {
-  max-width: 208px;
-}
-
 .searchBarContainer {
   display: flex !important;
   justify-content: center !important;
@@ -125,4 +121,19 @@
   color: #3f3f40;
   font-weight: bold;
   font-size: 30px;
+}
+
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border: none;
+  border-radius: 0;
+}
+
+.searchBarContainer :global(.vtex-input__suffix) {
+  border: none;
+  border-radius: 0;
+}
+
+.searchBarIcon {
+  color: #f55d2f;
 }
