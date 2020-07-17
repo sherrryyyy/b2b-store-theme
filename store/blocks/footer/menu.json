@@ -60,7 +60,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/becomepartner",
+        "href": "/registration",
         "noFollow": false,
         "tagTitle": "Cadatra-se",
         "text": "Cadatra-se"
@@ -123,7 +123,7 @@
 
   "rich-text#atendimento": {
     "props": {
-      "text": "9h00min até 17h:00min\faleconosco@vtex.com",
+      "text": "9h00min até 17h:00min",
       "font": "t-small",
       "blockClass": "atendimento-footer"
     }
