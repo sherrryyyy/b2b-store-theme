@@ -3,6 +3,7 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
+        "__unstableProductOriginVtex": true,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
@@ -13,6 +14,7 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
+        "__unstableProductOriginVtex": true,
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 10,
@@ -26,6 +28,7 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
+        "__unstableProductOriginVtex": true,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
@@ -36,6 +39,7 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
+        "__unstableProductOriginVtex": true,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
@@ -46,6 +50,7 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
+        "__unstableProductOriginVtex": true,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
@@ -57,7 +62,12 @@
       "search-result-layout.desktop",
       "search-result-layout.mobile",
       "search-not-found-layout"
-    ]
+    ],
+    "props": {
+      "querySchema": {
+        "__unstableProductOriginVtex": true
+      }
+    }
   },
   "search-result-layout.desktop": {
     "children": [
@@ -66,6 +76,9 @@
       "flex-layout.row#result"
     ],
     "props": {
+      "querySchema": {
+          "__unstableProductOriginVtex": true
+      },
       "pagination": "show-more",
       "preventRouteChange": true,
       "mobileLayout": {
@@ -166,6 +179,9 @@
       "flex-layout.row#fetchmore"
     ],
     "props": {
+      "querySchema": {
+        "__unstableProductOriginVtex": true
+      },
       "pagination": "show-more",
       "mobileLayout": {
         "mode1": "small",
