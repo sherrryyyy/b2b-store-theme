@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.3] - 2020-07-28
+
 ## [3.35.0] - 2020-04-13
 ### Added
 - `aspectRatio` and `maxHeight` on `product-summary-image#shelf`.
