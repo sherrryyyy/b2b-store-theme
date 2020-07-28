@@ -62,12 +62,7 @@
       "search-result-layout.desktop",
       "search-result-layout.mobile",
       "search-not-found-layout"
-    ],
-    "props": {
-      "querySchema": {
-        "__unstableProductOriginVtex": true
-      }
-    }
+    ]
   },
   "search-result-layout.desktop": {
     "children": [
@@ -75,10 +70,6 @@
       "flex-layout.row#suggestion",
       "flex-layout.row#result"
     ],
-    "props": {
-      "querySchema": {
-          "__unstableProductOriginVtex": true
-      },
       "pagination": "show-more",
       "preventRouteChange": true,
       "mobileLayout": {
@@ -178,10 +169,6 @@
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore"
     ],
-    "props": {
-      "querySchema": {
-        "__unstableProductOriginVtex": true
-      },
       "pagination": "show-more",
       "mobileLayout": {
         "mode1": "small",
