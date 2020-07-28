@@ -6,12 +6,13 @@
     ],
     "props": {
       "context": {
+        "__unstableProductOriginVtex": true,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
     }
   },
-  
+
   "search-bar": {
     "blocks": ["autocomplete-result-list.v2"],
     "props": {
@@ -22,6 +23,7 @@
   "autocomplete-result-list.v2": {
     "blocks": ["product-summary.shelf"],
     "props": {
+      "__unstableProductOriginVtex": true,
       "maxSuggestedProducts": 2
     }
   },
@@ -33,6 +35,7 @@
     ],
     "props": {
       "context": {
+        "__unstableProductOriginVtex": true,
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 10,
@@ -49,6 +52,7 @@
     ],
     "props": {
       "context": {
+        "__unstableProductOriginVtex": true,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
@@ -62,6 +66,7 @@
     ],
     "props": {
       "context": {
+        "__unstableProductOriginVtex": true,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
@@ -75,6 +80,7 @@
     ],
     "props": {
       "context": {
+        "__unstableProductOriginVtex": true,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
