@@ -40,3 +40,8 @@
 .image {
   border-radius: 0.25rem;
 }
+
+.element {
+  justify-content: space-between;
+  align-items: center;
+}

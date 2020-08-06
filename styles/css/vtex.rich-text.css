@@ -81,10 +81,15 @@
     color: #03034E;
     font-size: 40px;
     font-weight: 700;
-    max-width: 60%;
+    max-width: 100%;
   }
 
   .container--title .paragraph {
     line-height: 1.3em;
   }
+}
+
+.container--signup-text {
+  padding: 1rem;
+  height: 80px;
 }

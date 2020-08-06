@@ -5,8 +5,8 @@
     },
     "children": [
       "menu-item#category-home",
-      "menu-item#category-mobile",
       "menu-item#category-Molekule",
+      "menu-item#category-mobile",
       "menu-item#category-tools"
     ]
   },
@@ -101,8 +101,8 @@
         "type": "internal",
         "href": "/Molekule",
         "noFollow": false,
-        "tagTitle": "Molekule",
-        "text": "Molekule"
+        "tagTitle": "Home Appliance",
+        "text": "Home Appliance"
       }
     }
   },

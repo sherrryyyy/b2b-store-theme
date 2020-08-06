@@ -96,3 +96,7 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+.flexColChild--formReseller {
+  padding: 0 .5rem .5rem;
+}

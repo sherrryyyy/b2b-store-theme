@@ -90,7 +90,10 @@
     "blocks": ["product-review-form"]
   },
   "store.not-found#product": {
-    "blocks": ["rich-text#not-found"]
+    "blocks": [ "rich-text#not-found" ],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    }
   },
   "rich-text#not-found": {
     "props": {

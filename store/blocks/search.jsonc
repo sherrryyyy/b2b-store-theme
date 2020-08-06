@@ -7,8 +7,7 @@
         "simulationBehavior": "skip"
       }
     }
-    ,
-    "parent": {
+    , "parent": {
       "challenge": "challenge.trade-policy-condition"
     }
   },
@@ -236,11 +235,11 @@
     }
   },
   "search-not-found-layout": {
-    "children": ["flex-layout.row#searchbread", "flex-layout.row#notfound"]
+    "children": [ "flex-layout.row#searchbread", "flex-layout.row#notfound" ]
   },
 
   "flex-layout.row#notfound": {
-    "children": ["not-found"],
+    "children": [ "not-found" ],
     "props": {
       "fullWidth": true
     }

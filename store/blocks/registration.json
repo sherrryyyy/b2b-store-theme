@@ -1,119 +1,265 @@
 {
   "store.custom#registration": {
     "blocks": [
+      "rich-text#formTitle",
+      "rich-text#formIntro",
       "flex-layout.row#form"
-    ]
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
   },
   "flex-layout.row#form": {
-      "children": [
-        "flex-layout.col#form"
-      ]
-    },
-    "flex-layout.col#form": {
-      "children": [
-        "form"
-      ]
-    },
-    "form": {
-      "props": {  
-          "entity": "Revenda",  
-          "schema": "v1",
-          "blockclass": "textColumn",
-          "preventVerticalStretch": true
-        },  
-        "children": [
-          "rich-text#formTitle",
-          "flex-layout.col#coluna1",
-          "flex-layout.col#coluna2"
-        ],  
-        "blocks": ["form-success"]  
-    },
-    "flex-layout.col#coluna1":{
-      "children": [  
-        "form-input.text#razaoSocial",  
-        "form-input.text#nomeFantasia",
-        "form-input.text#cnpj",
-        "form-input.checkbox#contribuinte",
-        "form-input.checkbox#isento",
-        "form-input.text#inscricaoEstadual"
-      ]
-    },
-    "flex-layout.col#coluna2":{
-      "children": [  
-        "form-field-group#address",
-        "form-input.text#nfEmail",  
-        "form-submit"
-      ]
-    },
-    "form-success": {  
-      "children": [  
-        "rich-text#successSubmit"  
-      ]  
-    },  
-    "rich-text#successSubmit": {  
-      "props": {  
-        "text": "Data sent successfully",  
-        "textAlignment": "CENTER",  
-        "textPosition": "CENTER"  
-      }  
-    },  
-    "rich-text#formTitle": {  
-      "props": {  
-        "text": "Reseller registration",  
-        "textAlignment": "CENTER",  
-        "textPosition": "CENTER"  
-      }  
-    },
-    "form-input.text#razaoSocial": {  
-      "props": {  
-        "pointer": "#/properties/razaoSocial",
-        "label": "Company Name"  
-      }  
-    },  
-    "form-input.text#nomeFantasia": {  
-      "props": {  
-        "pointer": "#/properties/nomeFantasia",
-        "label": "Trading Name"  
-      }  
-    },  
-    "form-input.text#cnpj": {  
-      "props": {  
-        "pointer": "#/properties/cnpj",
-        "label": "Corporate Taxpayer"  
-      }  
-    },  
-    "form-input.checkbox#contribuinte": {  
-      "props": {  
-        "pointer": "#/properties/contribuinte",  
-        "label": "Tax payer?"  
-      }  
-    },  
-    "form-input.checkbox#isento": {  
-      "props": {  
-        "pointer": "#/properties/isento",  
-        "label": "Tax exempt?: "  
-      }  
-    },  
-    "form-input.text#inscricaoEstadual": {  
-      "props": {  
-        "pointer": "#/properties/inscricaoEstadual",  
-        "label": "State registry: "  
-      }  
-    },  
-    "form-field-group#address": {  
-      "props": {  
-        "pointer": "#/properties/address"  
-      }  
-    },  
-    "form-input.text#nfEmail": {  
-      "props": {  
-        "pointer": "#/properties/nfEmail",
-        "label": "Email: "  
-      }  
-    },  
-    "form-submit": {  
-      "props": {  
-        "label": "Submit"  
-      }  
+    "children": [
+      "flex-layout.col#form"
+    ]
+  },
+  "flex-layout.col#form": {
+    "children": [
+      "form"
+    ],
+    "props": {
+      "text": "# Become a partner",
+      "textPosition": "CENTER",
+      "blockClass": "formReseller"
     }
+  },
+  "rich-text#formTitle": {
+    "props": {
+      "text": "# Become a partner",
+      "textPosition": "CENTER",
+      "blockClass": "title"
+    }
+  },
+  "rich-text#contact": {
+    "props": {
+      "text": "**Your Contact**",
+      "blockClass": "formReseller"
+    }
+  },
+  "rich-text#company": {
+    "props": {
+      "text": "**Your company**",
+      "blockClass": "formReseller"
+    }
+  },
+  "rich-text#address": {
+    "props": {
+      "text": "**Company Address**",
+      "blockClass": "formReseller"
+    }
+  },
+  "rich-text#formIntro": {
+    "props": {
+      "text": "We offer all the support for our customers to provide better services and prosper in their business. We serve more than 20,000 partners across all over the world. Commercial consultants support their clients in the search for the best solutions to meet all types of demands.",
+      "blockClass": "signup-text"
+    }
+  },
+  "form": {
+    "props": {
+      "entity": "Revenda",
+      "schema": "v2"
+    },
+    "children": [
+      "rich-text#contact",
+      "flex-layout.row#formContact",
+      "rich-text#company",
+      "flex-layout.row#formCompany",
+      "rich-text#address",
+      "flex-layout.row#formAddress",
+      "form-submit"
+    ],
+    "blocks": [ "form-success" ]
+  },
+  "flex-layout.row#formCompany": {
+    "children": [
+      "flex-layout.col#formCompanycol1",
+      "flex-layout.col#formCompanycol2"
+    ],
+    "props": {
+      "blockClass": "formReseller"
+    }
+  },
+  "flex-layout.col#formCompanycol1": {
+    "children": [
+      "form-input.text#corporateName",
+      "form-input.text#stateRegistration",
+      "form-input.text#email"
+    ],
+    "props": {
+      "blockClass": "formReseller"
+    }
+  },
+  "flex-layout.col#formCompanycol2": {
+    "children": [
+      "form-input.text#corporateDocument",
+      "form-input.text#tradeName",
+      "form-input.text#phone"
+    ],
+    "props": {
+      "blockClass": "formReseller"
+    }
+  },
+  "form-input.text#corporateName": {
+    "props": {
+      "pointer": "#/properties/corporateName",
+      "label": "Company name: "
+    }
+  },
+  "form-input.text#corporateDocument": {
+    "props": {
+      "pointer": "#/properties/corporateDocument"
+    }
+  },
+  "form-input.text#stateRegistration": {
+    "props": {
+      "pointer": "#/properties/stateRegistration"
+    }
+  },
+  "form-input.text#tradeName": {
+    "props": {
+      "pointer": "#/properties/tradeName"
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email"
+    }
+  },
+  "form-input.text#phone": {
+    "props": {
+      "pointer": "#/properties/phone"
+    }
+  },
+  "flex-layout.row#formContact": {
+    "children": [
+      "flex-layout.col#formContactcol1",
+      "flex-layout.col#formContactcol2"
+    ],
+    "props": {
+      "blockClass": "formReseller"
+    }
+  },
+  "flex-layout.col#formContactcol1": {
+    "children": [
+      "form-input.text#firstName",
+      "form-input.text#homePhone"
+    ],
+    "props": {
+      "blockClass": "formReseller"
+    }
+  },
+  "flex-layout.col#formContactcol2": {
+    "children": [
+      "form-input.text#lastName"
+    ],
+    "props": {
+      "blockClass": "formReseller"
+    }
+  },
+  "form-input.text#firstName": {
+    "props": {
+      "pointer": "#/properties/firstName"
+    }
+  },
+  "form-input.text#homePhone": {
+    "props": {
+      "pointer": "#/properties/homePhone"
+    }
+  },
+  "form-input.text#lastName": {
+    "props": {
+      "pointer": "#/properties/lastName"
+    }
+  },
+  "flex-layout.row#formAddress": {
+    "children": [
+      "flex-layout.col#formAddresscol1",
+      "flex-layout.col#formAddresscol2"
+    ],
+    "props": {
+      "blockClass": "formReseller"
+    }
+  },
+  "flex-layout.col#formAddresscol1": {
+    "children": [
+      "form-input.dropdown#streetType",
+      "form-input.text#number",
+      "form-input.text#neighborhood",
+      "form-input.dropdown#state"
+    ],
+    "props": {
+      "blockClass": "formReseller"
+    }
+  },
+  "flex-layout.col#formAddresscol2": {
+    "children": [
+      "form-input.text#street",
+      "form-input.text#complement",
+      "form-input.text#city",
+      "form-input.text#postalCode"
+    ],
+    "props": {
+      "blockClass": "formReseller"
+    }
+  },
+  "form-input.dropdown#streetType": {
+    "props": {
+      "pointer": "#/properties/streetType"
+    }
+  },
+  "form-input.text#street": {
+    "props": {
+      "pointer": "#/properties/street"
+    }
+  },
+  "form-input.text#number": {
+    "props": {
+      "pointer": "#/properties/number"
+    }
+  },
+  "form-input.text#complement": {
+    "props": {
+      "pointer": "#/properties/complement"
+    }
+  },
+  "form-input.text#neighborhood": {
+    "props": {
+      "pointer": "#/properties/neighborhood"
+    }
+  },
+  "form-input.text#city": {
+    "props": {
+      "pointer": "#/properties/city"
+    }
+  },
+  "form-input.dropdown#state": {
+    "props": {
+      "pointer": "#/properties/state"
+    }
+  },
+  "form-input.text#postalCode": {
+    "props": {
+      "pointer": "#/properties/postalCode"
+    }
+  },
+  "form-success": {
+    "children": [
+      "rich-text#successSubmit"
+    ]
+  },
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "Data sent successfully. Within 48 hours we carry out the evaluation of your registration. We will send a reply to the email provided above.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "form-submit": {
+    "props": {
+      "label": "Submit",
+      "textAlignment": "Right",
+      "textPosition": "Right"
+    }
+  }
 }

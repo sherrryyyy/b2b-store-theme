@@ -64,5 +64,8 @@
     "vtex.category-menu": "2.x",
     "vtex.challenge-tp-condition": "0.x"
   },
+  "peerDependencies": {
+    "vtex.quickorder": "3.x"
+  },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
