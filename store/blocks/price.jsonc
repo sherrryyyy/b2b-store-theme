@@ -24,71 +24,31 @@
   },
   "flex-layout.row#selling-price": {
     "props": {
-      "colGap": 2,
+      "marginTop": 50,
       "preserveLayoutOnMobile": true,
-      "preventHorizontalStretch": true,
-      "marginBottom": 4
+      "preventHorizontalStretch": true
     },
-    "children": [
-      "challenge-permission#general-price"
-    ]
-  },
-  "flex-layout.row#selling-price-savings": {
-    "props": {
-      "colGap": 2,
-      "preserveLayoutOnMobile": true,
-      "preventHorizontalStretch": true,
-      "marginBottom": 4
-    },
-    "children": [
-      "challenge-permission#general2-price"
-    ]
-  },
-  "flex-layout.row#list-price-savings": {
-    "props": {
-      "colGap": 2,
-      "preserveLayoutOnMobile": true,
-      "preventHorizontalStretch": true,
-      "marginBottom": 2,
-      "marginTop": 5
-    },
-    "children": [
-      "challenge-permission#general3-price"
-    ]
-  },
-  "challenge-permission#general-price":{
-    "blocks":[
-      "allowed-content#general-price",
-      "disallowed-content#price"
-    ] 
-  },
-  "allowed-content#general-price":{
     "children": [
       "product-selling-price"
     ]
   },
-  "challenge-permission#general2-price":{
-    "blocks":[
-      "allowed-content#general2-price",
-      "disallowed-content#price"
-    ] 
-  },
-  "allowed-content#general2-price":{
+  "flex-layout.row#selling-price-savings": {
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true
+    },
     "children": [
-      "product-selling-price#summary",
-      "product-price-savings#summary"
+      "product-selling-price#summary"
     ]
   },
-  "challenge-permission#general3-price":{
-    "blocks":[
-      "allowed-content#general3-price",
-      "disallowed-content#price"
-    ] 
-  },
-  "allowed-content#general3-price":{
+
+  "flex-layout.row#list-price-savings": {
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true
+    },
     "children": [
-      "product-list-price",
-      "product-price-savings"
+      "product-list-price"
     ]
   }
 }

@@ -7,9 +7,6 @@
         "simulationBehavior": "skip"
       }
     }
-    , "parent": {
-      "challenge": "challenge.trade-policy-condition"
-    }
   },
 
   "store.search#brand": {
@@ -22,9 +19,6 @@
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
-    },
-    "parent": {
-      "challenge": "challenge.trade-policy-condition"
     }
   },
 
@@ -35,9 +29,6 @@
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
-    },
-    "parent": {
-      "challenge": "challenge.trade-policy-condition"
     }
   },
 
@@ -48,9 +39,6 @@
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
-    },
-    "parent": {
-      "challenge": "challenge.trade-policy-condition"
     }
   },
 
@@ -61,9 +49,6 @@
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
-    },
-    "parent": {
-      "challenge": "challenge.trade-policy-condition"
     }
   },
 
@@ -251,36 +236,6 @@
     }
   },
   "gallery": {
-    "blocks": ["product-summary.shelf#newdemo"]
-  },
-  "product-summary.shelf#newdemo": {
-    "children": [
-      "product-summary-name",
-      "product-summary-image",
-      "challenge-permission#plp-price"
-    ]
-  },
-  "challenge-permission#plp-price":{
-    "blocks":[
-      "allowed-content#price",
-      "disallowed-content#price"
-    ] 
-  },
-  "allowed-content#price":{
-    "children": [
-      "flex-layout.col#pricecontent"
-    ]
-  },
-  "disallowed-content#price":{
-    "children": []
-  },
-  "flex-layout.col#pricecontent":{
-    "children":[
-      "product-list-price",
-      "product-selling-price#summary",
-      "product-price-savings",
-      "product-installments",
-      "flex-layout.row#buy-button"
-    ]
+    "blocks": ["product-summary.shelf#default"]
   }
 }

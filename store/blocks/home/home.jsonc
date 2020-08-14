@@ -2,8 +2,6 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#deals",
       "rich-text#shelf-title",
@@ -16,7 +14,7 @@
   },
 
   "shelf#home": {
-    "blocks": ["product-summary.shelf"]
+    "blocks": ["product-summary.shelf#default"]
   },
 
   "list-context.image-list#demo": {
@@ -58,7 +56,7 @@
     "children": ["list-context.product-list#home"]
   },
   "list-context.product-list#home": {
-    "blocks": ["product-summary.shelf#home"],
+    "blocks": ["product-summary.shelf#default"],
     "children": ["slider-layout#demo-products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
@@ -102,18 +100,5 @@
       "text": "\n**Reach us at**\nwww.vtex.com.br",
       "blockClass": "link"
     }
-  },
-  "product-summary.shelf#home": {
-    "children": [
-      "product-summary-name",
-      "product-summary-image",
-      "challenge-permission#home-price"
-    ]
-  },
-  "challenge-permission#home-price":{
-    "blocks":[
-      "allowed-content#price",
-      "disallowed-content#price"
-    ] 
   }
 }
