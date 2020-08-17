@@ -4,7 +4,8 @@
       "flex-layout.row#title",
       "flex-layout.row#textarea",
       "flex-layout.row#upload",
-      "flex-layout.row#autocomplete"
+      "flex-layout.row#autocomplete",
+      "flex-layout.row#categories"
     ]
   }
 }
