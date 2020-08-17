@@ -161,11 +161,11 @@
 
   "order-config#header": {
       "children": [
-        "order-config.title#header",
-        "order-config.modal#header"
+        "flex-layout.row#order-config"
       ],
       "props": {
         "blockClass": "header",
+        "fullWidth":true,
         "formFields": [
           {
             "name": "orderType",
@@ -208,6 +208,16 @@
         ]
       }
     },
+    "flex-layout.row#order-config":{
+      "children": [
+        "order-config.title#header",
+        "order-config.modal#header"
+      ],
+      "props":{
+        "colSizing":"auto"
+      }
+    },
+
     "order-config.modal#header": {
       "children": [
         "order-config.form"
@@ -215,8 +225,9 @@
     },
     "order-config.title#header": {
       "props": {
-        "formTitle": "Order Configuration"
+        "formTitle": "Order Configuration:"
       }
     }
+
 
 }
