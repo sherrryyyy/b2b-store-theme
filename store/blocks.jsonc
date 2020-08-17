@@ -157,6 +157,66 @@
     "props": {
       "redirectPath": "/registration"
     }
-  }
+  },
+
+  "order-config#header": {
+      "children": [
+        "order-config.title#header",
+        "order-config.modal#header"
+      ],
+      "props": {
+        "blockClass": "header",
+        "formFields": [
+          {
+            "name": "orderType",
+            "type": "string",
+            "fieldType": "radio",
+            "label": "Order Type",
+            "defaultValue": "res",
+            "options": [
+              {
+                "label": "Resale",
+                "value": "res"
+              },
+              {
+                "label": "Consumption",
+                "value": "cons"
+              }
+            ]
+          },
+          {
+            "name": "state",
+            "type": "string",
+            "fieldType": "select",
+            "label": "State",
+            "showInTitle": true,
+            "options": [
+              {
+                "label": "ES",
+                "value": "ES"
+              },
+              {
+                "label": "SP",
+                "value": "SP"
+              },
+              {
+                "label": "RJ",
+                "value": "RJ"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "order-config.modal#header": {
+      "children": [
+        "order-config.form"
+      ]
+    },
+    "order-config.title#header": {
+      "props": {
+        "formTitle": "Order Configuration"
+      }
+    }
 
 }
