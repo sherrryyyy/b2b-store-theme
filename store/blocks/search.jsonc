@@ -1,59 +1,36 @@
 {
   "store.search": {
-    "blocks": ["search-result-layout"],
-    "props": {
-      "context": {
-        "skusFilter": "ALL",
-        "simulationBehavior": "skip",
-        "__unstableProductOriginVtex": "true"
-      }
+    "blocks": [ "search-result-layout" ],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
     }
   },
 
   "store.search#brand": {
-    "blocks": ["search-result-layout"],
-    "props": {
-      "context": {
-        "orderByField": "OrderByReleaseDateDESC",
-        "hideUnavailableItems": true,
-        "maxItemsPerPage": 10,
-        "skusFilter": "ALL",
-        "simulationBehavior": "skip",
-        "__unstableProductOriginVtex": "true"
-      }
+    "blocks": [ "search-result-layout" ],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
     }
   },
 
   "store.search#department": {
-    "blocks": ["search-result-layout"],
-    "props": {
-      "context": {
-        "skusFilter": "ALL",
-        "simulationBehavior": "skip",
-        "__unstableProductOriginVtex": "true"
-      }
+    "blocks": [ "search-result-layout" ],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
     }
   },
 
   "store.search#category": {
-    "blocks": ["search-result-layout"],
-    "props": {
-      "context": {
-        "skusFilter": "ALL",
-        "simulationBehavior": "skip",
-        "__unstableProductOriginVtex": "true"
-      }
+    "blocks": [ "search-result-layout" ],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
     }
   },
 
   "store.search#subcategory": {
-    "blocks": ["search-result-layout"],
-    "props": {
-      "context": {
-        "skusFilter": "ALL",
-        "simulationBehavior": "skip",
-        "__unstableProductOriginVtex": "true"
-      }
+    "blocks": [ "search-result-layout" ],
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
     }
   },
 
@@ -62,7 +39,18 @@
       "search-result-layout.desktop",
       "search-result-layout.mobile",
       "search-not-found-layout"
-    ]
+    ],
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "hideUnavailableItems": true,
+        "__unstableProductOriginVtex": true,
+        "maxItemsPerPage": 20,
+        "orderByField": "OrderByBestDiscountDESC",
+        "facetsBehavior": "dynamic",
+        "simulationBehavior": "default"
+      }
+    }
   },
   "search-result-layout.desktop": {
     "children": [

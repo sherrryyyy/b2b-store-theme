@@ -4,105 +4,56 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#category-home",
-      "menu-item#category-Molekule",
+      "menu-item#category-computers",
+      "menu-item#category-home-appliance",
+      "menu-item#category-machines",
       "menu-item#category-mobile",
+      "menu-item#category-personalized",
       "menu-item#category-tools"
     ]
   },
-  "menu-item#category-apparel": {
+  "menu-item#category-home-appliance": {
     "props": {
-      "id": "menu-item-category-apparel",
+      "id": "menu-item-category-home-appliance",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
-        "noFollow": false,
-        "tagTitle": "Apparel & Accessories",
-        "text": "Apparel & Accessories"
-      }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#category-apparel"
-    ]
-  },
-  "vtex.menu@2.x:submenu#category-apparel": {
-    "props": {
-      "width": "auto"
-    },
-    "children": [
-      "vtex.menu@2.x:menu#category-apparel"
-    ]
-  },
-  "vtex.menu@2.x:menu#category-apparel": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#category-apparel-clothing",
-      "menu-item#category-apparel-accessories",
-      "menu-item#category-apparel-eyeglasses"
-    ]
-  },
-  "menu-item#category-apparel-clothing": {
-    "props": {
-      "id": "menu-item-category-apparel-clothing",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/apparel---accessories/clothing/",
-        "noFollow": false,
-        "tagTitle": "Clothing",
-        "text": "Clothing"
-      }
-    }
-  },
-  "menu-item#category-apparel-accessories": {
-    "props": {
-      "id": "menu-item-category-apparel-accessories",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/apparel---accessories/accessories/",
-        "noFollow": false,
-        "tagTitle": "Accessories",
-        "text": "Accessories"
-      }
-    }
-  },
-  "menu-item#category-apparel-eyeglasses": {
-    "props": {
-      "id": "menu-item-category-apparel-eyeglasses",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/apparel---accessories/eyeglasses/",
-        "noFollow": false,
-        "tagTitle": "Eyeglasses",
-        "text": "Eyeglasses"
-      }
-    }
-  }, 
-  "menu-item#category-Molekule": {
-    "props": {
-      "id": "menu-item-category-Molekule",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/Molekule",
+        "href": "/home-appliance",
         "noFollow": false,
         "tagTitle": "Home Appliance",
         "text": "Home Appliance"
+      }
+    }
+  },
+  "menu-item#category-computers": {
+    "props": {
+      "id": "menu-item-category-computers",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Computers",
+        "noFollow": false,
+        "tagTitle": "Computers",
+        "text": "Computers"
+      }
+    }
+  },
+  "menu-item#category-machines": {
+    "props": {
+      "id": "menu-item-category-machines",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/champion-tools",
+        "noFollow": false,
+        "tagTitle": "Machines",
+        "text": "Machines"
       }
     }
   },
@@ -121,18 +72,18 @@
       }
     }
   },
-  "menu-item#category-home": {
+  "menu-item#category-personalized": {
     "props": {
-      "id": "menu-item-category-home",
+      "id": "menu-item-category-personalized",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/Computers",
+        "href": "/software",
         "noFollow": false,
-        "tagTitle": "Computers",
-        "text": "Computers"
+        "tagTitle": "Personalized",
+        "text": "Personalized"
       }
     }
   },
@@ -150,56 +101,6 @@
         "text": "Tools"
       }
     }
-  },
-  "menu-item#more": {
-    "props": {
-      "id": "menu-item-custom-sale",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "More",
-        "text": "More"
-      }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu#more"
-    ]
-  },
-  "vtex.menu@2.x:submenu#more": {
-    "props": {
-      "width": "100%"
-    },
-    "children": [
-      "flex-layout.row#menu-more"
-    ]
-  },
-  "flex-layout.row#menu-more": {
-    "children": [
-      "flex-layout.col#menu-more-1",
-      "flex-layout.col#menu-more-2"
-    ]
-  },
-  "flex-layout.col#menu-more-1": {
-    "children": [
-      "vtex.menu@2.x:menu#more"
-    ]
-  },
-  "flex-layout.col#menu-more-2": {
-    "children": [
-      "info-card#home"
-    ]
-  },
-  "vtex.menu@2.x:menu#more": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#about-us"
-    ]
   },
   "menu-item#about-us": {
     "props": {
