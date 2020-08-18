@@ -43,6 +43,7 @@
     "children": [
       "vtex.menu@2.x:menu#websites",
       "flex-layout.col#spacer",
+      "order-config#header",
       "vtex.menu@2.x:menu#institutional"
     ]
   },
@@ -104,8 +105,12 @@
   },
 
   "autocomplete-result-list.v2": {
-    "blocks": [ "product-summary.shelf#default" ]
+    "blocks": [ "product-summary.shelf#default" ],
+    "props": {
+      "__unstableProductOriginVtex": true
+    }
   },
+
   "flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
