@@ -7,7 +7,6 @@
       "menu-item#category-computers",
       "menu-item#category-home-appliance",
       "menu-item#category-machines",
-      "menu-item#category-mobile",
       "menu-item#category-personalized",
       "menu-item#category-tools"
     ]
@@ -54,21 +53,6 @@
         "noFollow": false,
         "tagTitle": "Machines",
         "text": "Machines"
-      }
-    }
-  },
-  "menu-item#category-mobile": {
-    "props": {
-      "id": "menu-item-category-mobile",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/mobile",
-        "noFollow": false,
-        "tagTitle": "Mobile",
-        "text": "Mobile"
       }
     }
   },
