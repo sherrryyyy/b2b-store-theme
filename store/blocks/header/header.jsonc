@@ -43,7 +43,7 @@
     "children": [
       "vtex.menu@2.x:menu#websites",
       "flex-layout.col#spacer",
-      "order-config#header",
+      "challenge-block#order-config",
       "vtex.menu@2.x:menu#institutional"
     ]
   },
@@ -78,21 +78,21 @@
     ]
   },
 
-  "challenge-block#search-bar": {
+  "challenge-block#order-config": {
     "blocks": [
-      "challenge-content#search-bar",
-      "challenge-fallback#search-bar"
+      "challenge-content#order-config",
+      "challenge-fallback#order-config"
     ]
   },
 
-  "challenge-fallback#search-bar": {
+  "challenge-fallback#order-config": {
     "children": [
     ]
   },
 
-  "challenge-content#search-bar": {
+  "challenge-content#order-config": {
     "children": [
-      "search-bar"
+      "order-config#header"
     ]
   },
 
