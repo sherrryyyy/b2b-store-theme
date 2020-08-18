@@ -3,6 +3,7 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
+        "__unstableProductOriginVtex": true,
         "skusFilter": "ALL",
         "simulationBehavior": "skip",
         "__unstableProductOriginVtex": "true"
@@ -14,6 +15,7 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
+        "__unstableProductOriginVtex": true,
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 10,
@@ -28,6 +30,7 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
+        "__unstableProductOriginVtex": true,
         "skusFilter": "ALL",
         "simulationBehavior": "skip",
         "__unstableProductOriginVtex": "true"
@@ -39,6 +42,7 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
+        "__unstableProductOriginVtex": true,
         "skusFilter": "ALL",
         "simulationBehavior": "skip",
         "__unstableProductOriginVtex": "true"
@@ -50,6 +54,7 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
+        "__unstableProductOriginVtex": true,
         "skusFilter": "ALL",
         "simulationBehavior": "skip",
         "__unstableProductOriginVtex": "true"
