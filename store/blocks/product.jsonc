@@ -53,8 +53,7 @@
         }
       ]
     },
-    "children": 
-    [
+    "children": [
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
       "flex-layout.row#description",
@@ -134,6 +133,7 @@
       "product-rating-summary",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
+      "link-seller",
       "product-separator",
       "product-identifier.product",
       "sku-selector",

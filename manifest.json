@@ -1,7 +1,7 @@
 {
   "vendor": "b2bstore",
   "name": "b2b-store-theme",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -63,7 +63,8 @@
     "vtex.auth-challenge": "1.x",
     "vtex.organizations-challenge": "1.x",
     "vtex.category-menu": "2.x",
-    "vtex.challenge-tp-condition": "0.x"
+    "vtex.challenge-tp-condition": "0.x",
+    "vtex.seller-selector": "0.x"
   },
   "peerDependencies": {
     "vtex.quickorder": "3.x"

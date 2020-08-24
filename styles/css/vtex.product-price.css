@@ -9,7 +9,17 @@
   font-size: 1.25rem;
 }
 
-.sellingPriceValue {
+.sellingPriceValue{
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.sellingPriceWithTax {
+  color: #3f3f40;
+  font-size: 1.25rem;
+}
+
+.sellingPriceWithTaxValue {
   font-size: 2.25rem;
   font-weight: 700;
 }
