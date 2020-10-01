@@ -1,33 +1,33 @@
 {
-  "store.search": {
+  "store.search.product-comparison": {
     "blocks": [ "search-result-layout" ],
     "parent": {
       "challenge": "challenge.trade-policy-condition"
     }
   },
 
-  "store.search#brand": {
+  "store.search.product-comparison#brand": {
     "blocks": [ "search-result-layout" ],
     "parent": {
       "challenge": "challenge.trade-policy-condition"
     }
   },
 
-  "store.search#department": {
+  "store.search.product-comparison#department": {
     "blocks": [ "search-result-layout" ],
     "parent": {
       "challenge": "challenge.trade-policy-condition"
     }
   },
 
-  "store.search#category": {
+  "store.search.product-comparison#category": {
     "blocks": [ "search-result-layout" ],
     "parent": {
       "challenge": "challenge.trade-policy-condition"
     }
   },
 
-  "store.search#subcategory": {
+  "store.search.product-comparison#subcategory": {
     "blocks": [ "search-result-layout" ],
     "parent": {
       "challenge": "challenge.trade-policy-condition"
@@ -36,7 +36,7 @@
 
   "search-result-layout": {
     "blocks": [
-      "search-result-layout.desktop",
+      "search-result-layout.desktop.product-comparison#search",
       "search-result-layout.mobile",
       "search-not-found-layout"
     ],
@@ -52,11 +52,12 @@
       }
     }
   },
-  "search-result-layout.desktop": {
+  "search-result-layout.desktop.product-comparison#search": {
     "children": [
       "flex-layout.row#didyoumean",
       "flex-layout.row#suggestion",
-      "flex-layout.row#result"
+      "flex-layout.row#result",
+      "product-comparison-drawer"
     ],
     "props": {
       "pagination": "show-more",
@@ -229,6 +230,6 @@
     }
   },
   "gallery": {
-    "blocks": ["product-summary.shelf#default"]
+    "blocks": ["product-summary.shelf.product-comparison#search"]
   }
 }

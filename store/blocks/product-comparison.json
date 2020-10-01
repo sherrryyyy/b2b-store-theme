@@ -1,0 +1,17 @@
+{
+  "store.custom#product-comparison-list": {
+    "children": [
+      "comparison-page"
+    ]
+  },
+  "product-summary.shelf.product-comparison#search": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-summary-attachment-list",
+      "product-summary-space",
+      "product-summary-column#1",
+      "product-comparison-block.selector"
+    ]
+  }
+}

@@ -4,5 +4,8 @@
   },
     "store.custom#registration": {
     "path": "/registration"
+  },
+    "store.custom#product-comparison-list": {
+    "path": "/product-comparison"
   }
 }
