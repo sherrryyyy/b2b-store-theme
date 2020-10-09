@@ -230,6 +230,6 @@
     }
   },
   "gallery": {
-    "blocks": ["product-summary.shelf.product-comparison#search"]
+    "blocks": ["product-summary.shelf#default"]
   }
 }

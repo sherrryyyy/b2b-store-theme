@@ -81,12 +81,16 @@
       "product-summary-space",
       "flex-layout.row#selling-price-savings",
       "product-installments#summary",
-      "add-to-cart-button"
+      "add-to-cart-button",
+      "responsive-layout.desktop"
     ],
     "props": {
       "marginTop": 10,
       "rowGap": "3"
     }
+  },
+  "responsive-layout.desktop": {
+    "children": ["product-comparison-block.selector"]
   },
 
   "add-to-cart-button": {
