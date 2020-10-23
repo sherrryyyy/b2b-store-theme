@@ -139,7 +139,11 @@
       "sku-selector",
       "challenge-permission#pdp-default-price",
       "availability-subscriber",
+      "product-quantity",
+      "product-assembly-options",
+      "product-gifts",
       "shipping-simulator",
+      "flex-layout.row#buy-button",
       "share#default"
     ]
   },
@@ -151,10 +155,7 @@
   },
   "allowed-content#pdp-default-price":{
     "children": [
-      "product-quantity",
-      "product-assembly-options",
-      "product-gifts",
-      "flex-layout.row#buy-button"
+      
     ]
   },
   "flex-layout.row#product-name": {
