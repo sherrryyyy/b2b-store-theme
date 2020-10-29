@@ -36,7 +36,7 @@
     "blocks":[
       "allowed-content#pdp-sku-buybutton",
       "disallowed-content#price"
-    ] 
+    ]
   },
   "allowed-content#pdp-sku-buybutton":{
     "children": [
@@ -140,7 +140,6 @@
       "challenge-permission#pdp-default-price",
       "availability-subscriber",
       "product-quantity",
-      "product-assembly-options",
       "product-gifts",
       "shipping-simulator",
       "flex-layout.row#buy-button",
@@ -150,13 +149,16 @@
   "challenge-permission#pdp-default-price":{
     "blocks":[
       "allowed-content#pdp-default-price",
-      "disallowed-content#price"
-    ] 
+      "disallowed-content#pdp-default-price"
+    ]
   },
   "allowed-content#pdp-default-price":{
     "children": [
-      
+      "product-assembly-options"
     ]
+  },
+  "disallowed-content#pdp-default-price": {
+    "children": []
   },
   "flex-layout.row#product-name": {
     "props": {
@@ -296,7 +298,7 @@
     "blocks":[
       "allowed-content#pdp-price",
       "disallowed-content#price"
-    ] 
+    ]
   },
   "allowed-content#pdp-price":{
     "children": [
@@ -307,7 +309,7 @@
     "blocks":[
       "allowed-content#pdp-quantity",
       "disallowed-content#price"
-    ] 
+    ]
   },
   "allowed-content#pdp-quantity":{
     "children": [
