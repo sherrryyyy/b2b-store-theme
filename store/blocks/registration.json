@@ -77,17 +77,18 @@
       "flex-layout.col#formCompanycol2"
     ],
     "props": {
-      "blockClass": "formReseller"
+      "blockClass": "formResellerCompanyBlock"
     }
   },
   "flex-layout.col#formCompanycol1": {
     "children": [
       "form-input.text#corporateName",
       "form-input.text#stateRegistration",
-      "form-input.text#email"
+      "form-input.text#email",
+      "form-input.upload#upload"
     ],
     "props": {
-      "blockClass": "formReseller"
+      "blockClass": "formResellerCompany"
     }
   },
   "flex-layout.col#formCompanycol2": {
@@ -97,7 +98,7 @@
       "form-input.text#phone"
     ],
     "props": {
-      "blockClass": "formReseller"
+      "blockClass": "formResellerCompany"
     }
   },
   "form-input.text#corporateName": {
@@ -241,6 +242,11 @@
   "form-input.text#postalCode": {
     "props": {
       "pointer": "#/properties/postalCode"
+    }
+  },
+  "form-input.upload#upload": {
+    "props": {
+      "pointer": "#/properties/upload"
     }
   },
   "form-success": {
