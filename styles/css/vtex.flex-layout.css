@@ -97,6 +97,14 @@
   padding-bottom: 1rem;
 }
 
-.flexColChild--formReseller {
+.flexColChild--formReseller, .flexColChild--formResellerCompanyBlock, .flexColChild--formResellerCompany {
   padding: 0 .5rem .5rem;
+}
+
+.flexRowContent--formResellerCompanyBlock .stretchChildrenWidth{
+  display: initial;
+}
+
+.flexRowContent--formResellerCompanyBlock .stretchChildrenWidth .flexCol--formResellerCompany{
+  height: initial;
 }
