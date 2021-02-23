@@ -170,7 +170,11 @@
       "menu-item#category-home-appliance",
       "menu-item#category-machines",
       "menu-item#category-personalized",
-      "menu-item#category-tools"
+      "menu-item#category-tools",
+      "product-separator",
+      "menu-item#shop",
+      "menu-item#about-us",
+      "challenge-block#loggedIn"
     ],
     "props": {
       "orientation": "vertical"
@@ -185,7 +189,6 @@
       "width": "70"
     }
   },
-
   "minicart.v2": {
     "props": {
       "variation": "link"
