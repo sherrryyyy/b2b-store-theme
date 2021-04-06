@@ -1,0 +1,35 @@
+{
+  "store.custom#trade-test": {
+    "blocks": [
+      "flex-layout.row#trade-test"
+    ]
+  },
+  "flex-layout.row#trade-test": {
+    "children": [
+      "flex-layout.col#text-trade-test"
+    ]
+  },
+  "flex-layout.col#text-trade-test": {
+    "children": [
+      "rich-text#title-trade-test",
+      "rich-text#trade-test"
+    ],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#title-trade-test": {
+    "props": {
+      "text":
+      "# Test trade policy message",
+      "blockClass": "title"
+    }
+  },
+  "rich-text#trade-test": {
+    "props": {
+      "text": "**Lorem ipsum dolor sit amet** \n Consectetur adipiscing elit. In in lacus tortor. Nunc sed urna ut massa semper hendrerit. Pellentesque et quam magna. Fusce egestas accumsan arcu et elementum. Cras ultricies nulla nec nisl consequat iaculis. Proin rhoncus ipsum a ipsum accumsan tincidunt. Nunc a pretium magna..",
+      "blockClass": "about"
+    }
+  }
+}

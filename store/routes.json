@@ -2,6 +2,9 @@
     "store.custom#about-us": {
     "path": "/about-us"
   },
+    "store.custom#trade-test": {
+    "path": "/trade-test"
+  },
     "store.custom#registration": {
     "path": "/registration"
   },
