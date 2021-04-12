@@ -2,8 +2,8 @@
     "store.custom#about-us": {
     "path": "/about-us"
   },
-    "store.custom#trade-test": {
-    "path": "/trade-test"
+    "store.custom#account-not-found": {
+    "path": "/account-not-found"
   },
     "store.custom#registration": {
     "path": "/registration"
