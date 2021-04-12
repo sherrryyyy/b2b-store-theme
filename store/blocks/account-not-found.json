@@ -11,7 +11,6 @@
   },
   "flex-layout.col#text-account-not-found": {
     "children": [
-      "rich-text#title-account-not-found",
       "rich-text#account-not-found"
     ],
     "props": {
@@ -19,17 +18,10 @@
       "preventVerticalStretch": true
     }
   },
-  "rich-text#title-account-not-found": {
-    "props": {
-      "text":
-      "# Test trade policy message",
-      "blockClass": "title"
-    }
-  },
   "rich-text#account-not-found": {
     "props": {
       "text": "**We did not find an account with the informed login. Register or login with the email address used to register your account.** \n",
-      "blockClass": "about"
+      "blockClass": "loginTradePolicy"
     }
   }
 }
