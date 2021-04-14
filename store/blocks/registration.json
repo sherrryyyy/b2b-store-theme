@@ -246,7 +246,8 @@
   },
   "form-input.upload#upload": {
     "props": {
-      "pointer": "#/properties/upload"
+      "pointer": "#/properties/upload",
+      "accept": ".doc, .png"
     }
   },
   "form-success": {

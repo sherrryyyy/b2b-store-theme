@@ -1,0 +1,27 @@
+{
+  "store.custom#account-not-found": {
+    "blocks": [
+      "flex-layout.row#account-not-found"
+    ]
+  },
+  "flex-layout.row#account-not-found": {
+    "children": [
+      "flex-layout.col#text-account-not-found"
+    ]
+  },
+  "flex-layout.col#text-account-not-found": {
+    "children": [
+      "rich-text#account-not-found"
+    ],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#account-not-found": {
+    "props": {
+      "text": "**We did not find an account with the informed login. Register or login with the email address used to register your account.** \n",
+      "blockClass": "loginTradePolicy"
+    }
+  }
+}

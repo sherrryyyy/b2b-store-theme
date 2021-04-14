@@ -2,6 +2,9 @@
     "store.custom#about-us": {
     "path": "/about-us"
   },
+    "store.custom#account-not-found": {
+    "path": "/account-not-found"
+  },
     "store.custom#registration": {
     "path": "/registration"
   },
