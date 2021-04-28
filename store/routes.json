@@ -5,6 +5,9 @@
     "store.custom#account-not-found": {
     "path": "/account-not-found"
   },
+    "store.custom#not-logged-in": {
+    "path": "/not-logged-in"
+  },
     "store.custom#registration": {
     "path": "/registration"
   },
