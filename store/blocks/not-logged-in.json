@@ -1,0 +1,27 @@
+{
+  "store.custom#not-logged-in": {
+    "blocks": [
+      "flex-layout.row#not-logged-in"
+    ]
+  },
+  "flex-layout.row#not-logged-in": {
+    "children": [
+      "flex-layout.col#text-not-logged-in"
+    ]
+  },
+  "flex-layout.col#text-not-logged-in": {
+    "children": [
+      "rich-text#not-logged-in"
+    ],
+    "props": {
+      "blockClass": "textColumn",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#not-logged-in": {
+    "props": {
+      "text": "**Please, register or login with the email address used to register your account.** \n",
+      "blockClass": "loginTradePolicy"
+    }
+  }
+}
