@@ -74,7 +74,7 @@
       "search-bar",
       "locale-switcher",
       "login",
-      "b2b-auth.signup",
+      "b2b-signup-button",
       "minicart.v2"
     ]
   },
@@ -152,7 +152,7 @@
       "logo#mobile",
       "flex-layout.col#spacer",
       "login",
-      "b2b-auth.signup",
+      "b2b-signup-button",
       "minicart.v2"
     ],
     "props": {
