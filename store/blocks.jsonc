@@ -9,20 +9,23 @@
  */
 {
   "store.orderplaced": {
-    "blocks": [ "order-placed" ]
+    "blocks": [
+      "order-placed"
+    ]
   },
-
   "store.account": {
-    "blocks": [ "my-account"],
+    "blocks": [
+      "my-account"
+    ],
     "parent": {
       "challenge": "challenge.trade-policy-condition"
     }
   },
-
   "store.login": {
-    "blocks": [ "login-content#default" ]
+    "blocks": [
+      "login-content#default"
+    ]
   },
-
   "login": {
     "props": {
       "isInitialScreenOptionOnly": false,
@@ -30,7 +33,6 @@
       "showPasswordVerificationIntoTooltip": true
     }
   },
-
   "login-content#default": {
     "props": {
       "isInitialScreenOptionOnly": false,
@@ -38,7 +40,6 @@
       "showPasswordVerificationIntoTooltip": true
     }
   },
-
   "product-summary.shelf#default": {
     "children": [
       "product-summary-name",
@@ -47,36 +48,30 @@
       "challenge-block#mostra-precos"
     ]
   },
-
   "challenge-block#mostra-precos": {
     "blocks": [
       "challenge-content#mostra-precos"
     ]
   },
-
   "challenge-content#mostra-precos": {
     "children": [
       "challenge-permission#mostra-precos"
     ]
   },
-
   "challenge-permission#mostra-precos": {
     "blocks": [
       "allowed-content#mostra-precos",
       "disallowed-content#price"
     ]
   },
-
   "disallowed-content#price": {
     "children": []
   },
-
   "allowed-content#mostra-precos": {
     "children": [
       "flex-layout.col#product"
     ]
   },
-
   "flex-layout.col#product": {
     "children": [
       "product-summary-space",
@@ -91,9 +86,10 @@
     }
   },
   "responsive-layout.desktop": {
-    "children": ["product-comparison-block.selector"]
+    "children": [
+      "product-comparison-block.selector"
+    ]
   },
-
   "add-to-cart-button": {
     "props": {
       "text": "Buy",
@@ -101,7 +97,6 @@
       "marginBottom": 7
     }
   },
-
   "product-summary-buy-button": {
     "props": {
       "isOneClickBuy": false,
@@ -109,7 +104,6 @@
       "buyButtonBehavior": "alwaysGoToProduct"
     }
   },
-
   "product-summary-image#shelf": {
     "props": {
       "showBadge": false,
@@ -117,14 +111,12 @@
       "maxHeight": 220
     }
   },
-
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image#shelf",
       "modal-trigger#quickview"
     ]
   },
-
   "product-summary-specification-badges": {
     "props": {
       "specificationGroupName": "Group",
@@ -133,18 +125,19 @@
       "displayValue": "SPECIFICATION_NAME"
     }
   },
-
   "store.product-review-form": {
-    "blocks": [ "product-review-form" ]
+    "blocks": [
+      "product-review-form"
+    ]
   },
-
   "store.not-found#product": {
-    "blocks": [ "rich-text#not-found" ],
+    "blocks": [
+      "rich-text#not-found"
+    ],
     "parent": {
       "challenge": "challenge.trade-policy-condition"
     }
   },
-
   "rich-text#not-found": {
     "props": {
       "textAlignment": "CENTER",
@@ -153,86 +146,82 @@
       "font": "t-heading-1"
     }
   },
-
   "store.not-found#search": {
-    "blocks": [ "rich-text#not-found" ]
+    "blocks": [
+      "rich-text#not-found"
+    ]
   },
-
   "challenge.trade-policy-condition": {
     "props": {
       "redirectPath": "/registration"
     }
   },
-
   "order-config#header": {
-      "children": [
-        "flex-layout.row#order-config"
-      ],
-      "props": {
-        "blockClass": "header",
-        "fullWidth":true,
-        "formFields": [
-          {
-            "name": "orderType",
-            "type": "string",
-            "fieldType": "radio",
-            "label": "Order Type",
-            "defaultValue": "res",
-            "options": [
-              {
-                "label": "Resale",
-                "value": "res"
-              },
-              {
-                "label": "Consumption",
-                "value": "cons"
-              }
-            ]
-          },
-          {
-            "name": "state",
-            "type": "string",
-            "fieldType": "select",
-            "label": "State",
-            "showInTitle": true,
-            "options": [
-              {
-                "label": "ES",
-                "value": "ES"
-              },
-              {
-                "label": "SP",
-                "value": "SP"
-              },
-              {
-                "label": "RJ",
-                "value": "RJ"
-              }
-            ]
-          }
-        ]
-      }
-    },
-    "flex-layout.row#order-config":{
-      "children": [
-        "order-config.title#header",
-        "order-config.modal#header"
-      ],
-      "props":{
-        "colSizing":"auto"
-      }
-    },
-
-    "order-config.modal#header": {
-      "children": [
-        "order-config.form"
+    "children": [
+      "flex-layout.row#order-config"
+    ],
+    "props": {
+      "blockClass": "header",
+      "fullWidth": true,
+      "formFields": [
+        {
+          "name": "orderType",
+          "type": "string",
+          "fieldType": "radio",
+          "label": "Order Type",
+          "defaultValue": "res",
+          "options": [
+            {
+              "label": "Resale",
+              "value": "res"
+            },
+            {
+              "label": "Consumption",
+              "value": "cons"
+            }
+          ]
+        },
+        {
+          "name": "state",
+          "type": "string",
+          "fieldType": "select",
+          "label": "State",
+          "showInTitle": true,
+          "options": [
+            {
+              "label": "ES",
+              "value": "ES"
+            },
+            {
+              "label": "SP",
+              "value": "SP"
+            },
+            {
+              "label": "RJ",
+              "value": "RJ"
+            }
+          ]
+        }
       ]
-    },
-    "order-config.title#header": {
-      "props": {
-        "formTitle": "Order Configuration:"
-      }
     }
-
-
+  },
+  "flex-layout.row#order-config": {
+    "children": [
+      "order-config.title#header",
+      "order-config.modal#header"
+    ],
+    "props": {
+      "colSizing": "auto"
+    }
+  },
+  "order-config.modal#header": {
+    "children": [
+      "order-config.form"
+    ]
+  },
+  "order-config.title#header": {
+    "props": {
+      "formTitle": "Order Configuration:"
+    }
+  }
 }

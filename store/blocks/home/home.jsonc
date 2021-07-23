@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "b2b-approved-message",
+      "b2b-supplier.not-approved-message",
       "list-context.image-list#demo",
       "__fold__.experimentalLazyAssets",
       "flex-layout.row#deals",
