@@ -93,7 +93,8 @@
 
   "challenge-content#order-config": {
     "children": [
-      "order-config#header"
+      "order-config#header",
+      "b2b-orders"
     ]
   },
 
