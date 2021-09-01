@@ -67,8 +67,7 @@
     "vtex.seller-selector": "0.x",
     "vtex.product-comparison": "0.x",
     "vtex.responsive-layout": "0.x",
-    "vtex.b2b-signup-button": "0.x",
-    "vtex.b2b-approved-message": "0.x"
+    "vtex.b2b-supplier": "0.x"
   },
   "peerDependencies": {
     "vtex.quickorder": "3.x"

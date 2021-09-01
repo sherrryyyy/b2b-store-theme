@@ -1,0 +1,17 @@
+{
+  "store.custom#creating-buyer-org": {
+    "blocks": [
+      "flex-layout.row#creating-buyer-org"
+    ]
+  },
+  "flex-layout.row#creating-buyer-org": {
+    "children": [
+      "flex-layout.col#text-creating-buyer-org"
+    ]
+  },
+  "flex-layout.col#text-creating-buyer-org": {
+    "children": [
+      "b2b-supplier.creating-buyer-org"
+    ]
+  }
+}
