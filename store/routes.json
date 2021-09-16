@@ -1,17 +1,20 @@
 {
-    "store.custom#about-us": {
+  "store.custom#about-us": {
     "path": "/about-us"
   },
-    "store.custom#account-not-found": {
+  "store.custom#account-not-found": {
     "path": "/account-not-found"
   },
-    "store.custom#not-logged-in": {
+  "store.custom#not-logged-in": {
     "path": "/not-logged-in"
   },
-    "store.custom#registration": {
+  "store.custom#registration": {
     "path": "/registration"
   },
-    "store.custom#product-comparison-list": {
+  "store.custom#product-comparison-list": {
     "path": "/product-comparison"
+  },
+  "store.custom#creating-buyer-org": {
+    "path": "/creating-buyer-org"
   }
 }

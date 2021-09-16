@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "b2b-store-theme",
-  "version": "2.10.0",
+  "version": "2.11.1",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -68,6 +68,7 @@
     "vtex.product-comparison": "0.x",
     "vtex.responsive-layout": "0.x",
     "vtex.b2b-signup-button": "0.x",
+    "vtex.b2b-supplier": "0.x"
     "vtex.b2b-orders": "0.x"
   },
   "peerDependencies": {
