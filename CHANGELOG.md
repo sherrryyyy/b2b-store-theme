@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [2.12.0] - 2021-10-05
 - Adding b2b-orders pixel
 
 ## [2.11.1] - 2021-09-15
