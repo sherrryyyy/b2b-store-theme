@@ -13,8 +13,5 @@
   },
   "store.custom#product-comparison-list": {
     "path": "/product-comparison"
-  },
-  "store.custom#creating-buyer-org": {
-    "path": "/creating-buyer-org"
   }
 }

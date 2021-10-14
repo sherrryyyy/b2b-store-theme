@@ -67,7 +67,7 @@
     "vtex.seller-selector": "0.x",
     "vtex.product-comparison": "0.x",
     "vtex.responsive-layout": "0.x",
-    "vtex.b2b-supplier": "0.x",
+    "vtex.b2b-supplier": "2.x",
     "vtex.b2b-orders": "0.x"
   },
   "peerDependencies": {
